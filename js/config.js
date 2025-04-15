@@ -1,8 +1,8 @@
 const BASE_URL = {
-    GET: "http://localhost:3000",
-    POST: "http://localhost:3000",
-    PUT: "http://localhost:3000",
-    DELETE: "http://localhost:3000",
+    GET: "https://papadata-2.onrender.com/",
+    POST: "https://papadata-2.onrender.com/",
+    PUT: "https://papadata-2.onrender.com/",
+    DELETE: "https://papadata-2.onrender.com/",
 }
 
 export default BASE_URL
