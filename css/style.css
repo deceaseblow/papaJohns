@@ -1,0 +1,649 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add this to your style.css file */
+
+#section-inps {
+    display: none; /* Hidden by default */
+    transition: all 0.3s ease-in-out;
+    margin-top: 100px; /* Add padding for fixed navbar */
+}
+
+#inps {
+    max-width: 600px !important;
+    width: 90% !important;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+
+#inps input {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+#inps button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#inps button:first-of-type {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+#inps button:first-of-type:hover {
+    background-color: #45a049;
+}
+
+#inps button:last-of-type {
+    background-color: #FFC107;
+    color: black;
+    border: none;
+}
+
+#inps button:last-of-type:hover {
+    background-color: #e5ac06;
+}
+
+/* Add a cancel button to close the form */
+#cancel-edit {
+    background-color: #f44336 !important;
+    color: white !important;
+    margin-top: 10px;
+}
+
+#cancel-edit:hover {
+    background-color: #d32f2f !important;
+}
+
+/* Add transition for smooth visibility changes */
+#section-inps {
+    opacity: 1; /* Fully visible by default */
+    visibility: visible; /* Ensure it's visible */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+#section-inps.hidden {
+    opacity: 0; /* Fully transparent */
+    visibility: hidden; /* Hide the element */
+}
+
+nav{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#navbarNav ul li a{
+    color:black;
+    font-family: 'arial', sans-serif;
+    font-weight: 600;
+}
+#navbarNav ul li a:hover{
+    color: crimson;
+    transition: 0.3s;
+}
+.navbar-toggler-icon{
+   color:black;
+}
+#section-1{
+    margin-top:150px;
+}
+
+/* section 2 */
+
+#section-2{
+    margin:100px;
+}
+#section-2 h1, #section-2 h2{
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+}
+#section-2 p{
+    font-family: 'arial', sans-serif;
+    font-weight: 500;
+    max-width:700px;
+}
+
+.categories{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width:100%;
+    justify-content: center;
+    font-family: 'arial', sans-serif;
+    font-weight: 600;
+    padding:40px 0;
+}
+
+@media screen and (max-width: 976px) {
+    .categories {
+        flex-direction: column;
+
+    }
+    
+}
+
+
+/* section 3 */
+#section-3{
+    margin: 80px 0;
+}
+
+.section-3-cards{
+    display: flex;
+    gap:40px;
+    align-items: center;
+    width:100%;
+    justify-content: center;
+    font-family: 'arial', sans-serif;
+    font-weight: 600;
+}
+#cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-3-cards .card{
+    width:200px; 
+    border-radius: 10px;
+    transition: 0.3s;
+    border: none;
+    img{
+        height: 220px;
+    }
+}
+.section-3-cards .card:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+.section-3-cards .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f5e8dc;
+    padding-top:40px;
+    a{
+        width: fit-content;
+        background-color: transparent;
+        border: none;
+        color:grey;
+        text-decoration: underline;
+    }
+}
+
+#section-3 h1{
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+
+/* section 4  PAPA TALK */
+
+
+#section-4 {
+    margin: 100px 0;
+    height: auto; 
+}
+
+  
+  .card-img-container {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width:800px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .card-text {
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .btn-details {
+    background-color: #dde50c;
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .btn-details:hover {
+    background-color: #cddc39;
+    color: #fff;
+    transition: 0.3s;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-body{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:16px;
+    button{
+        width:fit-content;
+    }
+  }
+  .papatalk-card {
+    background-color: #f8f3ed;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+  }
+  #section-4 .papatalk-card{
+    padding:40px;
+  }
+
+@media (max-width: 768px) {
+    .papatalk-card {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .card-img-container {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .card-body {
+        text-align: center; 
+    }
+}
+
+/* section-5 */
+
+
+.section-5-cards {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.section-5-cards .card {
+    flex: 1;
+    border: none;
+    background-color: #f5e8dc;
+    min-height: 200px; /* Fixed equal height */
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.section-5-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-5-cards .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff5a5f, #c13584);
+}
+
+.section-5-cards .card-body {
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-5-cards .card-title {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+
+
+.section-5-cards .card-text {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+#section-5 {
+    margin: 80px 0;
+    padding: 0 15px;
+}
+
+#section-5 h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+@media screen and (max-width: 992px) {
+    .section-5-cards {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    
+    .section-5-cards .card {
+        width: 45%;
+        min-height: 230px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-5-cards {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .section-5-cards .card {
+        width: 100%;
+        min-height: 200px;
+        margin-bottom: 5px;
+    }
+    
+    #section-5 {
+        margin: 50px 0;
+    }
+}
+
+/* footer css */
+
+.footer {
+    background-color: #5a9b70;
+    color: white;
+    padding: 50px 0;
+    width: 100%;
+
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.newsletter {
+    flex: 1.5;
+    min-width: 300px;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+}
+
+.newsletter-form button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.newsletter p {
+    font-size: 12px;
+}
+
+.footer-middle {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-middle h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.payment-methods {
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 15px;
+    color: white;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-left: auto;
+}
+
+.footer-copyright {
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-top, .footer-bottom {
+        flex-direction: column;
+    }
+    
+    .social-icons {
+        margin-top: 20px;
+    }
+    
+    .footer-logo {
+        margin: 20px 0;
+    }
+}
+
+/* Input Section Styling */
+#section-inps {
+    margin: 150px 0 80px;
+    padding: 20px 0;
+    background-color: #f8f3ed;
+}
+
+#inps {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid crimson;
+    position: relative;
+}
+
+#inps::before {
+    content: "Create Your Pizza";
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    background-color: crimson;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+#inps input {
+    border: 1px solid #dfd2c7;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+#inps input:focus {
+    border-color: #5a9b70;
+    box-shadow: 0 0 0 3px rgba(90, 155, 112, 0.2);
+    outline: none;
+}
+
+#inps input::placeholder {
+    color: #888;
+}
+
+#inps button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#inps button:first-of-type {
+    background-color: #5a9b70;
+    color: white;
+}
+
+#inps button:first-of-type:hover {
+    background-color: #4d8b62;
+    transform: translateY(-2px);
+}
+
+#inps button:last-of-type {
+    background-color: #dde50c;
+    color: #333;
+}
+
+#inps button:last-of-type:hover {
+    background-color: #c3ca0a;
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    #section-inps {
+        margin-top: 120px;
+    }
+    
+    #inps {
+        width: 95%;
+        padding: 25px 15px;
+    }
+}
+

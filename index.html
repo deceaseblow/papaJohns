@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PapaJohn's </title>
+    <link rel="stylesheet" href="forBootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="media/papaSiteLogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="navbar-logo" src="media/papaSiteLogo.png" style="height:80px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#section-1">OFFERS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-2">NEW</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-3">INFO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-4">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-5">CONTACT </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="section-inps">   
+        <div id="inps" class="rounded-md mx-auto flex flex-col gap-3 bg-[#f8f9fa] my-5 p-5">    
+            <h3 class="text-center font-bold text-xl mb-3">Edit Product Details</h3>
+            <input class="border bg-[#fff] rounded-[10px] p-2" placeholder="name" type="text">
+            <input class="border bg-[#fff] rounded-[10px] p-2" placeholder="img" type="text">
+            <input class="border bg-[#fff] rounded-[10px] p-2" placeholder="category" type="text">
+            <input class="border bg-[#fff] rounded-[10px] p-2" placeholder="composition" type="text">
+            <input class="border bg-[#fff] rounded-[10px] p-2" placeholder="price" type="number">
+            <button onclick="createPost()" class="border bg-[green] py-2 rounded-[10px]">Create Product</button>
+            <button onclick="updatePost()" class="border bg-[yellow] py-2 rounded-[10px]">Update Product </button>
+            <button id="cancel-edit" onclick="cancelEdit()" class="border py-2 rounded-[10px]">Cancel</button>
+        </div>
+      </section>
+
+    
+    <section id="section-1">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="media/image.png" alt="First slide">
+                  <div class="btn-on-carousel">
+                    <a href="#section-2" class="btn"> indi sifaris et! </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="media/image-2.png" alt="Second slide">
+                  <div class="btn-on-carousel">
+                    <a href="#section-2" class="btn"> indi sifaris et! </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="media/image-3.png" alt="Third slide">
+                  <div class="btn-on-carousel">
+                    <a href="#section-2" class="btn"> indi sifaris et! </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="media/image-4.png" alt="Fourth slide">
+                  <div class="btn-on-carousel">
+                    <a href="#section-2" class="btn"> indi sifaris et! </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="media/image-5.png" alt="Fifth slide">
+                  <div class="btn-on-carousel">
+                    <a href="#section-2" class="btn"> indi sifaris et! </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="media/image-6.png" alt="Sixth slide">
+                  <div class="btn-on-carousel">
+                    <a href="#section-2" class="btn"> indi sifaris et! </a>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+        </div>
+    </section>
+    <style>
+        .carousel-item {
+            position: relative;
+          }
+          .btn-on-carousel {
+            position: absolute;
+            z-index: 999;
+            bottom: 40px; 
+            left: 40px;   
+            a{
+                background-color: rgb(38, 114, 31);
+                color: white;
+                font-size: 16px;
+                border-radius: 20px;
+            }
+          }
+    </style>
+    
+    <section id="section-2">
+        <div class="container">
+           <div class="section-3-content"> 
+            <h1>TOOK A TASTE OF <span style="color:red;">IT</span> YET?</h1>
+            <h2><span style="color:red;">NOW</span> IS THE TIME!</h2>
+             <p>The <span style="color:red;">crispy</span>, <span style="color:red;">cheesy</span> new pizzas are now on <span style="color:red;">sale </span> and delighting everyone with delicious options.
+                Our new pizzas are now available at all our restaurants.
+                We invite you to discover our new pizzas too!</p>
+            </div>
+            <div class="categories">
+                <div class="all">All</div>
+                <div class="papadias">Papadias</div> 
+                <div class="pizza">Pizza</div>
+                <div class="salat">Salatlar</div>
+                <div class="pasta">Pasta</div>
+                <div class="souses">Souslar</div>
+                <div class="drinks">İçkilər</div>
+                <div class="desserts">Desertlər</div>      
+            </div>
+            <div id="cards"></div>
+            <div id="salat-cards"></div>
+            <div id="pasta-cards"></div>
+            <div id="souses-cards"></div>   
+            <div id="drinks-cards"></div>
+            <div id="desserts-cards"></div>
+        </div>
+
+    </section>
+
+    <section id="section-3">
+        <div class="container-md">
+        <h1>WANT TO GET TO KNOW <span style="color:red;">MORE</span> ? </h1>
+        <div class="section-3-cards">
+            <div class="card" style="width: 22rem; height: 30rem;">
+                <img class="card-img-top" src="media/card-1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Better ingredients. Better Pizza. </h5>
+                  <p class="card-text">Too easy. Always has been. Since our first pizza! </p>
+                  <a href="#" class="btn btn-primary">About Us </a>
+                </div>
+              </div>
+              <div class="card" style="width: 22rem; height: 30rem;">
+                <img class="card-img-top" src="media/card-2.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Everyday new pizza offers! </h5>
+                  <p class="card-text">We have offers for each type of anniversary and party! </p>
+                  <a href="#" class="btn btn-primary">Offers </a>
+                </div>
+              </div>
+              <div class="card" style="width: 22rem; height: 30rem;">
+                <img class="card-img-top" src="media/card-3.png" alt="Card image cap">
+                <div class="card-body">
+            
+                    <h5 class="card-title">Find the nearest pizza restaurant. </h5>
+                  <p class="card-text">PapaJohn's has 18 restaurants in Baku! </p>
+                
+                  <a href="#" class="btn btn-primary">Restaurants </a>
+                </div>
+              </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="section-4">
+      <div class="container">
+          <!-- Remove the d-none d-lg-block class -->
+          <div class="mt-4">
+              <div class="papatalk-card">
+                  <div>
+                      <div class="card-img-container">
+                          <img src="media/infoCard.png" class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Couple sitting">
+                      </div>
+                  </div>
+                  <div class="card-body p-4">
+                      <h5 class="card-title">WE LOVE YOUR COMMENTS, SO PLEASE, LET US KNOW.</h5>
+                      <p class="card-text">PapaTalk is a feedback system that gives you the chance to share your thoughts about your order.
+                          Your opinion is very important to us so we can improve and provide even better service.</p>
+                      <p class="card-text">The most exciting part? By sharing your feedback, you get a chance to win a year's supply of pizza!</p>
+                      <button class="btn btn-details">MORE</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="section-5">
+    <div class="container">
+        <h2>HOW TO <span style="color:red;">CONTACT</span> US</h2>
+        <div class="section-5-cards">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Call us, visit our restaurant, or order online</h5>
+                    <p class="card-text">Drop by our restaurants, pick up your order, or call *7272 for delivery.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Quality Seal</h5>
+                    <p class="card-text">We ensure your order is delivered safely — straight from the oven to your doorstep.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Over 6,000 Restaurants Worldwide</h5>
+                    <p class="card-text">Yes, we're global! Our pizzas are loved all around the world — in Africa, Europe, Asia, North and South America, and by customers everywhere.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-top">
+              <div class="footer-column">
+                  <h3>Şirkətimiz</h3>
+                  <ul>
+                      <li><a href="#">Haqqımızda</a></li>
+                      <li><a href="#">Restoranlar</a></li>
+                      <li><a href="#">İnqrediyentlər</a></li>
+                      <li><a href="#">Papa Bonus</a></li>
+                      <li><a href="#">Papa Talk</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Dəstək</h3>
+                  <ul>
+                      <li><a href="#">Bizimlə əlaqə</a></li>
+                      <li><a href="#">Qeydiyyatdan keçin</a></li>
+                      <li><a href="#">Sual-Cavab</a></li>
+                      <li><a href="#">Bizim dəstəyimiz</a></li>
+                  </ul>
+              </div>
+              <div class="newsletter">
+                  <div class="newsletter-form">
+                      <input type="email" placeholder="E-poçt ünvanını daxil et">
+                      <button>Abunə olun</button>
+                  </div>
+                  <p>Qeydiyyatdan keçməklə məni Papa John's-dan marketinq e-məktublarını almağa razıyam. Məxfilik Siyasətimizə bax.</p>
+              </div>
+          </div>
+          
+          <div class="footer-middle">
+              <h2>Daha Yaxşı İnqrediyentlər. Daha Yaxşı Pizza.</h2>
+              <img src="media/papaSiteLogo.png" alt="Papa Talk" class="papa-talk-logo" style="width:150px;">
+          </div>
+          
+          <div class="footer-bottom">
+              <div>
+                  <div class="footer-links">
+                      <a href="#">Məxfilik siyasəti</a>
+                      <a href="#">Kuki faylları ilə əlaqəli siyasət</a>
+                      <a href="#">Şərtlər və Qaydalar</a>
+                      <a href="#">Xəritə</a>
+                  </div>
+                  <div class="payment-methods">
+                      Mövcud ödəniş üsulları:
+                      <!-- Payment icons would go here -->
+                  </div>
+              </div>
+              
+              <div class="social-icons">
+                  <a href="#"><span><i class="fa-brands fa-facebook"></i></span></a>
+                  <a href="#"><span><i class="fa-brands fa-youtube"></i></span></a>
+                  <a href="#"><span><i class="fa-brands fa-tiktok"></i></span></a>
+                  <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
+              </div>
+              
+              <img src="media/papa-rewards-logo.png" alt="Papa Johns Logo" class="footer-logo" style="width:200px;">
+          </div>
+          
+          <div class="footer-copyright">
+              ©2024 Papa Johns International, Inc. Bütün hüquqlar qorunur. Məhsulların qiymətləri dəyişə bilər. İçkilər ilə bağlı bütün ticari nişanları təchizatçı tərəfdaşlarımızın qeydiyyatlı ticari nişanlarıdır. Bəzi təkliflər bir neçə pizzaların alınmasını tələb edir. Bəzi təkliflər yalnız onlayn mövcuddur. Kampaniyalar, kombo və endirimler eyni zamanda istifadə edilə və toplana bilməz. Sifarişdə göstərilən məhsulların şəkil həmin məhsulun real görünüşündən fərqlənə bilər. Sifarişlər təyin olunmuş çatdırılma sahəsində yerinə yetirilir. Çatdırılma 10 AZN-dan sifarış etdikdə həyata keçirilir.
+          </div>
+      </div>
+  </footer>
+
+    <script src="forBootstrap/bootstrap.js"></script>
+    <script src="js/script.js" type="module"></script>
+   
+</body>
+
+</html>
